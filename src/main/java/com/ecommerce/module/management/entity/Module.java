@@ -22,10 +22,11 @@ public class Module {
   @Id
   @GeneratedValue(generator = "uuid")
   @GenericGenerator(name = "uuid", strategy = "uuid2")
-  private String id;
-  @Column(name = "module_id")
+  @Column(name = "id", length = 36, nullable = false)
+  private String id;  
+  @Column(name = "module_id", length = 20, nullable = false)
   private String moduleId;
-  @Column(name = "name")
+  @Column(name = "name", length = 20)
   private String name;
   @Column(name = "description")
   private String description;

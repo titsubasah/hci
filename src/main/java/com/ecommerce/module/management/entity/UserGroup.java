@@ -28,10 +28,11 @@ public class UserGroup {
   @Id
   @GeneratedValue(generator = "uuid")
   @GenericGenerator(name = "uuid", strategy = "uuid2")
+  @Column(name = "id", length = 36, nullable = false)
   private String id;
-  @Column(name = "group_id")
+  @Column(name = "group_id", length = 20, nullable = false)
   private String groupId;
-  @Column(name = "name")
+  @Column(name = "name", length = 20)
   private String name;
   @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "userGroup")
   private List<User> users;
