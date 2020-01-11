@@ -2,8 +2,11 @@
 
 ### Stack
 Language: Java 8
+
 Framework: Springboot 2
+
 Dependency Management: Maven
+
 Database: MariaDB
 
 ### Setup
