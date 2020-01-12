@@ -4,7 +4,7 @@
 - Language: Java 8
 - Framework: Springboot 2
 - Library Management: Maven
--Database: MariaDB
+- Database: MariaDB
 
 ### Setup
 1. Import project in IDEA (I use eclipse)
